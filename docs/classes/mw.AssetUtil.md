@@ -50,12 +50,12 @@ export default class AssetExample extends Script {
         const cubeAssetId = "7711";
         if (AssetUtil.assetLoaded(cubeAssetId)) {
             console.log("AssetExample: Cube asset is already loaded.");
-            let obj = GameObject.spawn({ guid: cubeAssetId });
+            let obj = GameObject.spawn(cubeAssetId );
             obj.worldTransform.position = new Vector(0, 0, 0);
         } else {
             console.log("AssetExample: Cube asset is not loaded, downloading...");
             AssetUtil.asyncDownloadAsset(cubeAssetId).then(() => {
-                let obj = GameObject.spawn({ guid: cubeAssetId });
+                let obj = GameObject.spawn(cubeAssetId);
                 obj.worldTransform.position = new Vector(0, 0, 0);
             });
         }
@@ -92,12 +92,12 @@ export default class AssetExample extends Script {
         const cubeAssetId = "7711";
         if (AssetUtil.assetLoaded(cubeAssetId)) {
             console.log("AssetExample: Cube asset is already loaded.");
-            let obj = GameObject.spawn({ guid: cubeAssetId });
+            let obj = GameObject.spawn(cubeAssetId );
             obj.worldTransform.position = new Vector(0, 0, 0);
         } else {
             console.log("AssetExample: Cube asset is not loaded, downloading...");
             AssetUtil.asyncDownloadAsset(cubeAssetId).then(() => {
-                let obj = GameObject.spawn({ guid: cubeAssetId });
+                let obj = GameObject.spawn(cubeAssetId );
                 obj.worldTransform.position = new Vector(0, 0, 0);
             });
         }
